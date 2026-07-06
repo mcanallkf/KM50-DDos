@@ -38,9 +38,9 @@ banner = r"""
 \033[38;5;220m╚═════════════════════════════════════════════════════╝"""
 print (banner)
 while attemps < 100:
-        print("\033[38;5;6m┏━━KunFayz━━⬣")
-        username = input("\033[38;5;6m┗> Enter Username: \033[33m")
-        password = input("\033[38;5;6m┗> Enter password: \033[30m")
+    print("\033[38;5;6m┏━━KunFayz━━⬣")
+    username = input("\033[38;5;6m┗> Enter Username: \033[33m")
+    password = input("\033[38;5;6m┗> Enter password: \033[30m")
 
     if username == 'blackarmy' and password == 'admin':
         print("\033[100m \033[31m••> BURNING WEBS 210πiS \033[0m")
