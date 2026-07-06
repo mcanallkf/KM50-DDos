@@ -20,8 +20,11 @@ time.sleep(5)
 print("Loading...")
 time.sleep(5)
 def show_banner():
-    # Clear terminal before showing banner
-    os.system("cls" if os.name == "nt" else "clear")
+# Clear terminal before showing banner
+if platform.system().upper() == "WINDOWS":
+    os.system('cls')
+else:
+    os.system('clear')
 attemps = 0
 banner = r"""
   \033[38;5;220m╔════════════════════════════════════════════════════════════════════════╗                            
