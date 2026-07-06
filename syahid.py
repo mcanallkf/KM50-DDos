@@ -15,7 +15,7 @@ print("\033[38;5;220m•••• SELAMAT DATANG DI ZONA ATTACK BLACK ARMY •�
 time.sleep(3)
 print("\033[37m•••• SCRIPT INI DI DEDIKASIKAN UNTUK PARA SYUHADA ••••")
 time.sleep(3)
-print("\033[32m•••• YANG TERJADI DALAM AREA KM50 ••••")
+print("\033[32m•••• YANG SYAHID DALAM AREA KM50 ••••")
 time.sleep(5)
 print("\033[38;5;220mLoading...")
 time.sleep(5)
