@@ -38,7 +38,7 @@ def show_banner():
    \033[38;5;220m╚═════════════════════════════════════════════════════╝
     """
     print (banner)
-while attemps < 100:
+    while attemps < 100:
     print("\033[38;5;6m┏━━KunFayz━━⬣")
     username = input("\033[38;5;6m┗> Enter Username: \033[33m")
     password = input("\033[38;5;6m┗> Enter password: \033[30m")
