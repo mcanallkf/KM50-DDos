@@ -13,11 +13,11 @@ os.system("clear")
 time.sleep(3)
 print("\033[38;5;220m•••• SELAMAT DATANG DI ZONA ATTACK BLACK ARMY ••••")
 time.sleep(3)
-print("\033[33m•••• MENGENANG SEJARAH KELAM KM50  ••••")
+print("\033[37m•••• SCRIPT INI DI DEDIKASIKAN UNTUK PARA SYUHADA ••••")
 time.sleep(3)
-print("\033[32m•••  YANG TERKUBUR OLEH SEJARAH HITAM  ••••")
+print("\033[32m•••• YANG TERJADI DALAM AREA KM50 ••••")
 time.sleep(5)
-print("Loading...")
+print("\033[38;5;220mLoading...")
 time.sleep(5)
 
 os.system('clear')
@@ -43,7 +43,7 @@ while attemps < 100:
     password = input("\033[38;5;6m┗> Enter password: \033[30m")
 
     if username == 'blackarmy' and password == 'admin':
-        print("\033[100m \033[31m••> BURNING WEBS 210πiS \033[0m")
+        print("\033[100m \033[37m••> BURNING WEBS 210πiS \033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
@@ -72,7 +72,7 @@ def send_request(url, req_id, ua_cycle):
         elapsed = time.time() - start
 
         if response.status_code == 200:
-            msg = (f"[Request {req_id}] ✅ Success ({response.status_code}) | "
+            msg = (f"\033[32m[Request {req_id}]\033[94m Success ({response.status_code}) | "
                    f"Delay: {delay:.3f}s | RT: {elapsed:.3f}s | UA: {headers['User-Agent']}")
         elif response.status_code == 403:
             msg = (f"[Request {req_id}] 🚫 Forbidden (403) | "
