@@ -11,14 +11,14 @@ MAX_DELAY = 1.0   # seconds
 
 os.system("clear")
 time.sleep(3)
-print("\033[38;5;220mmSelamat datang di zona attack BLACK ARMY")
+print("\033[38;5;220m••••••Selamat datang di zona attack BLACK ARMY")
 time.sleep(3)
-print("\033[38;5;206mScript ini di dedikasikan utk para Syuhada KM50")
+print("\033[38;5;206m••••••Script ini di dedikasikan utk para Syuhada KM50")
 time.sleep(3)
-print("\033[32mHANYA UNTUK ATTACK WEBS ZIONIST")
+print("\033[32m••••••HANYA UNTUK ATTACK WEBS ZIONIST")
 time.sleep(5)
 print("Loading...")
-
+time.sleep(5)
 attemps = 0
 os.system("clear")
 print("""
@@ -30,8 +30,8 @@ print("""
   \033[38;5;220m║\033[95m│██ ██   \033[33m │██ │██ │██    \033[36m │   │   │\033[33m\033[38;5;220m  
   \033[38;5;220m║\033[95m│██ ╮██  \033[33m │██ │██ │██ \033[38;5;206m╭██████ │\033[36m ╰───╯   │\033[33m \033[38;5;220m
   \033[38;5;220m║\033[95m│██ ╰╮██ \033[33m │██ ╰─╯ │██ \033[38;5;206m╰─────╯033[33m  │   │   │\033[38;5;220m \033[37m 
-  \033[38;5;220m║\033[95m│██  ╰╮██ \033[33m│██      │██  │\033[36m \033[33m\033[38;5;220m \033[37m
-  \033[38;5;220m║\033[95m╰──╯  ╰─╯ \033[33m╰─╯      ╰─╯\033[38;5;220m───╯\033[37m───\033[32m\033[38;5;206m
+  \033[38;5;220m║\033[95m│██  ╰╮██ \033[33m│██     │██  │\033[36m \033[33m\033[38;5;220m \033[37m
+  \033[38;5;220m║\033[95m╰──╯  ╰─╯ \033[33m╰─╯     ╰─╯\033[38;5;220m───╯\033[37m───\033[32m\033[38;5;206m
   \033[38;5;220m║
   \033[38;5;220m╚═════════════════════════════════════════════════════╝""")
 while attemps < 100:
