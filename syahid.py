@@ -35,7 +35,9 @@ def show_banner():
    \033[38;5;220m║\033[95m│██  ╰╮██ \033[33m│██     │██  │\033[36m \033[33m\033[38;5;220m \033[37m
    \033[38;5;220m║\033[95m╰──╯  ╰─╯ \033[33m╰─╯     ╰─╯\033[38;5;220m───╯\033[37m───\033[32m\033[38;5;206m
    \033[38;5;220m║
-   \033[38;5;220m╚═════════════════════════════════════════════════════╝""")
+   \033[38;5;220m╚═════════════════════════════════════════════════════╝
+    """
+    print (banner)
 while attemps < 100:
     print("\033[38;5;6m┏━━KunFayz━━⬣")
     username = input("\033[38;5;6m┗> Enter Username: \033[33m")
@@ -90,7 +92,7 @@ def send_request(url, req_id, ua_cycle):
         return None
 
 def main():
-    os.system("clear")  
+    show_banner()
 
     domain = input("Enter website domain (e.g. https://example.com): ").strip()
     try:
