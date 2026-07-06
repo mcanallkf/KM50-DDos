@@ -88,7 +88,7 @@ def send_request(url, req_id, ua_cycle):
         return None
 
 def main():
-    show_banner()  
+    os.system("clear")  
 
     domain = input("Enter website domain (e.g. https://example.com): ").strip()
     try:
