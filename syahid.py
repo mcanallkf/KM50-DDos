@@ -11,9 +11,9 @@ MAX_DELAY = 1.0   # seconds
 
 os.system("clear")
 time.sleep(3)
-print("\033[37m••••••••")
+print("\033[37mSelamat datang di zona attack BLACK ARMY")
 time.sleep(3)
-print("https://github.com/mcanallkf/Weblock-ddos")
+print("https:Script ini di dedikasikan utk para Syuhada KM50")
 time.sleep(3)
 print("\033[32mHANYA UNTUK ATTACK WEBS ZIONIST")
 time.sleep(5)
@@ -32,13 +32,14 @@ print("""
   \033[38;5;220m║\033[95m│██ ╰╮██ ╰╯  ╰╯   │\033[36m ╭───╭───╮\033[33m  │   │   │\033[38;5;220m   │\033[37m │   │   │\033[32m │\033[38;5;206m    │   ╭╮  ╰─╮
   \033[38;5;220m║\033[95m│██  ╰╮██   ╭─╮    │\033[36m ╰───╯   │\033[33m  ╰───╯   │\033[38;5;220m   │\033[37m ╰───╯   │\033[32m ╰───────╮\033[38;5;206m│╰─╮  ╰╮
   \033[38;5;220m║\033[95m╰──╯  ╰─╯\033[36m─────────╯\033[33m──────────╯\033[38;5;220m───╯\033[37m─────────╯\033[32m─────────╯\033[38;5;206m╯  ╰───╯""")
+  \033[38;5;220m║
 
 while attemps < 100:
     print("\033[38;5;6m┏━━KunFayz━━⬣")
     username = input("\033[38;5;6m┗> Enter Username: \033[33m")
     password = input("\033[38;5;6m┗> Enter password: \033[30m")
 
-    if username == 'blackarmy' and password == 'agent':
+    if username == 'blackarmy' and password == 'admin':
         print("\033[100m \033[31m••> BURNING WEBS 210πiS \033[0m")
         break
     else:
