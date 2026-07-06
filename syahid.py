@@ -19,14 +19,11 @@ print("\033[32m•••  YANG TERKUBUR OLEH SEJARAH HITAM  ••••")
 time.sleep(5)
 print("Loading...")
 time.sleep(5)
-def show_banner():
-# Clear terminal before showing banner
-if platform.system().upper() == "WINDOWS":
-    os.system('cls')
-else:
-    os.system('clear')
+
+os.system('clear')
 attemps = 0
-banner = r"""
+print("""
+
   \033[38;5;220m╔════════════════════════════════════════════════════════════════════════╗                            
   \033[38;5;220m║\033[95m                              
   \033[38;5;220m║\033[95m╭██   ╭██ \033[33m╭████ ╭████ │   │\033[38;5;220m       │   │\033[38;5;206m        
@@ -39,8 +36,7 @@ banner = r"""
   \033[38;5;220m║\033[95m╰──╯  ╰─╯ \033[33m╰─╯     ╰─╯\033[38;5;220m───╯\033[37m───\033[32m\033[38;5;206m
   \033[38;5;220m║
   \033[38;5;220m╚═════════════════════════════════════════════════════╝
-"""
-print (banner)
+""")
 while attemps < 100:
     print("\033[38;5;6m┏━━KunFayz━━⬣")
     username = input("\033[38;5;6m┗> Enter Username: \033[33m")
@@ -95,7 +91,6 @@ def send_request(url, req_id, ua_cycle):
         return None
 
 def main():
-    show_banner()
 
     domain = input("Enter website domain (e.g. https://example.com): ").strip()
     try:
