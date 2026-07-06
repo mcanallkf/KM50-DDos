@@ -73,7 +73,7 @@ def send_request(url, req_id, ua_cycle):
 
         if response.status_code == 200:
             msg = (f"\033[32m[Request {req_id}]\033[94m Success ({response.status_code}) | "
-                   f"Delay: {delay:.3f}s | RT: {elapsed:.3f}s | UA: {headers['User-Agent']}")
+                   f"\033[38;5;214mDelay: {delay:.3f}s | RT: {elapsed:.3f}s | UA: {headers['User-Agent']}")
         elif response.status_code == 403:
             msg = (f"[Request {req_id}] 🚫 Forbidden (403) | "
                    f"Delay: {delay:.3f}s | RT: {elapsed:.3f}s | UA: {headers['User-Agent']}")
