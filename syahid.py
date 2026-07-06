@@ -9,23 +9,42 @@ from itertools import cycle
 MIN_DELAY = 0.1   # seconds
 MAX_DELAY = 1.0   # seconds
 
-def show_banner():
-    # Clear terminal before showing banner
-    os.system("cls" if os.name == "nt" else "clear")
-    banner = r"""
- 
- ██.    ██  ████       ████
- ██    ██   ██ ██     ██ ██
- ██   ██    ██  ██   ██  ██
- ██ ██      ██   ██ ██   ██
- ██   ██    ██    ███    ██
- ██    ██   ██            ██
- ██      ██ ██            ██ 
-░     
+os.system("clear")
+time.sleep(3)
+print("\033[37m••••••••")
+time.sleep(3)
+print("https://github.com/mcanallkf/Weblock-ddos")
+time.sleep(3)
+print("\033[32mHANYA UNTUK ATTACK WEBS ZIONIST")
+time.sleep(5)
+print("Loading...")
 
+attemps = 0
+os.system("clear")
+print("""
+  \033[38;5;220m                                  ╭───╮\033[38;5;206m                ╭───╮
+  \033[33m                      ╭───╮\033[38;5;220m       │   │\033[38;5;206m                │   │
+  \033[95m╭██   ╭██ ───╮\033[33m        │   │\033[38;5;220m       │   │\033[38;5;206m                │   │
+  \033[95m│██ ╭╯██ │╭──╮│   │\033[36m─────────╮\033[33m  ╰───────╮\033[38;5;220m   │\033[37m─────────╮\033[32m─────────╮\033[38;5;206m│   ╭───╮ 
+  \033[95m│██ ╯██ ││  ││   │\033[36m ╭───╮   │\033[33m          │\033[38;5;220m   │\033[37m         │\033[32m         │\033[38;5;206m│ ╭─╯ ╭─╯
+  \033[95m│██ ██  ││  ││   │\033[36m │   │   │\033[33m  ╭───╮   │\033[38;5;220m   │\033[37m ╭───╮   │\033[32m ╭───────╯\033[38;5;206m╰─╯   │
+  \033[95m│██ ╮██  ││  ││   │\033[36m ╰───╯   │\033[33m  │   │   │\033[38;5;220m   │\033[37m │   │   │\033[32m │\033[38;5;206m    │       ╭─╯
+  \033[95m│██ ╰╮██ ╰╯  ╰╯   │\033[36m ╭───╭───╮\033[33m  │   │   │\033[38;5;220m   │\033[37m │   │   │\033[32m │\033[38;5;206m    │   ╭╮  ╰─╮
+  \033[95m│██  ╰╮██   ╭─╮    │\033[36m ╰───╯   │\033[33m  ╰───╯   │\033[38;5;220m   │\033[37m ╰───╯   │\033[32m ╰───────╮\033[38;5;206m│╰─╮  ╰╮
+  \033[95m╰──╯  ╰─╯\033[36m─────────╯\033[33m──────────╯\033[38;5;220m───╯\033[37m─────────╯\033[32m─────────╯\033[38;5;206m╯  ╰───╯""")
 
-    """
-    print(banner)
+while attemps < 100:
+    print("\033[38;5;6m┏━━KunFayz━━⬣")
+    username = input("\033[38;5;6m┗> Enter Username: \033[33m")
+    password = input("\033[38;5;6m┗> Enter password: \033[30m")
+
+    if username == 'blackarmy' and password == 'agent':
+        print("\033[100m \033[31m••> BURNING WEBS 210πiS \033[0m")
+        break
+    else:
+        print('Incorrect credentials. Check if you have Caps lock on and try again.')
+        attemps += 1
+        continue  
 
 def load_user_agents(filename="user-agent.txt"):
     try:
