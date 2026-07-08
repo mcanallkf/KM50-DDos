@@ -127,6 +127,7 @@ def main():
     print(f"Other errors: {len([r for r in results if r not in (200, 403) and r is not None])}")
     print(f"Total time: {end_time - start_time:.2f} seconds")
     print("Logs saved to: load_test.log")
-    print("\n━━━
+    print("\n━*58")
+         
 if __name__ == "__main__":
     main()
