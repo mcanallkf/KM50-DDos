@@ -120,13 +120,13 @@ def main():
             results.append(future.result())
 
     end_time = time.time()
-    print("\n--- Load Test Summary ---")
+    print("\n━━━ Load Test Summary ━━━")
     print(f"Total requests sent: {len(results)}")
     print(f"Successful responses: {results.count(200)}")
     print(f"403 Forbidden responses: {results.count(403)}")
     print(f"Other errors: {len([r for r in results if r not in (200, 403) and r is not None])}")
     print(f"Total time: {end_time - start_time:.2f} seconds")
     print("Logs saved to: load_test.log")
-
+    print("\n━━━
 if __name__ == "__main__":
     main()
