@@ -91,10 +91,10 @@ def send_request(url, req_id, ua_cycle):
 
 def main():
 
-    domain = input("Enter website domain (e.g. https://example.com): ").strip()
+    domain = input("\033[32mEnter website domain (e.g. https://example.com): ").strip()
     try:
-        total_requests = int(input("Enter number of requests: "))
-        workers = int(input("Enter number of workers (parallel threads): "))
+        total_requests = int(input("\033[32mEnter number of requests: "))
+        workers = int(input("\033[32mEnter number of workers (parallel threads): "))
     except ValueError:
         print("‼️ Invalid input! Please enter integers for requests and workers.")
         return
@@ -109,8 +109,8 @@ def main():
     user_agents = load_user_agents("user-agent.txt")
     ua_cycle = cycle(user_agents)
 
-    print(f"\nStarting load test on {domain} with {total_requests} requests using {workers} workers...")
-    print(f"Random delay per request: {MIN_DELAY}–{MAX_DELAY} seconds\n")
+    print(f"\033[32m\nStarting load test on {domain} with {total_requests} requests using {workers} workers...")
+    print(f"\033[32mRandom delay per request: {MIN_DELAY}–{MAX_DELAY} seconds\n")
     start_time = time.time()
 
     results = []
