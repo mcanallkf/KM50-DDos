@@ -11,11 +11,11 @@ MAX_DELAY = 1.0   # seconds
 
 os.system("clear")
 time.sleep(3)
-print("\033[38;5;220m•••• SELAMAT DATANG DI ZONA ATTACK BLACK ARMY ••••")
+print("\033[38;5;220m•••• SELAMAT DATANG DI ZONA ATTACK BLACK ARMY _")
 time.sleep(3)
-print("\033[37m•••• SCRIPT INI DI DEDIKASIKAN UNTUK PARA SYUHADA ••••")
+print("\033[37m•••• SCRIPT INI DI DEDIKASIKAN UNTUK PARA SYUHADA _")
 time.sleep(3)
-print("\033[32m•••• YANG SYAHID DALAM AREA KM50 ••••")
+print("\033[32m•••• YANG SYAHID DALAM AREA KM50 _")
 time.sleep(5)
 print("\033[38;5;220mLoading...")
 time.sleep(5)
@@ -41,7 +41,7 @@ while attemps < 100:
     username = input("\033[38;5;6m┗> Enter Username: \033[33m")
     password = input("\033[38;5;6m┗> Enter password: \033[30m")
 
-    if username == 'blackarmy' and password == 'admin':
+    if username == 'zblack' and password == 'admin':
         print("\033[100m \033[37m••> BURNING WEBS 210πiS \033[0m")
         break
     else:
@@ -77,14 +77,14 @@ def send_request(url, req_id, ua_cycle):
             msg = (f"\033[37m[Request {req_id}]\033[38;5;206m Forbidden (403) | "
                    f"\033[37mDelay: {delay:.3f}s | RT: {elapsed:.3f}s | UA: {headers['User-Agent']}")
         else:
-            msg = (f"[Request {req_id}] ⚠️ Failed ({response.status_code}) | "
-                   f"Delay: {delay:.3f}s | RT: {elapsed:.3f}s | UA: {headers['User-Agent']}")
+            msg = (f"\033[32m[Request {req_id}] ❗ Failed ({response.status_code}) | "
+                   f"\033[33mDelay: {delay:.3f}s | RT: {elapsed:.3f}s | UA: {headers['User-Agent']}")
         print(msg)
         logging.info(msg)
         return response.status_code
     except Exception as e:
         elapsed = time.time() - start
-        msg = f"[Request {req_id}]🆘 Error: {e} | Delay: {delay:.3f}s | RT: {elapsed:.3f}s"
+        msg = f"\033[30m[Request {req_id}]‼️Error: {e} | Delay: {delay:.3f}s | RT: {elapsed:.3f}s"
         print(msg)
         logging.error(msg)
         return None
@@ -96,11 +96,11 @@ def main():
         total_requests = int(input("Enter number of requests: "))
         workers = int(input("Enter number of workers (parallel threads): "))
     except ValueError:
-        print("🆘 Invalid input! Please enter integers for requests and workers.")
+        print("‼️ Invalid input! Please enter integers for requests and workers.")
         return
 
     if total_requests <= 0 or workers <= 0:
-        print("🆘 Requests and workers must be positive integers!")
+        print("‼️ Requests and workers must be positive integers!")
         return
 
     logging.basicConfig(filename="load_test.log", level=logging.INFO,
